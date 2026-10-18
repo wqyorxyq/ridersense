@@ -457,4 +457,3 @@ def live():
     return {'ok':True}
 
 app.mount('/static', StaticFiles(directory=ROOT/'static'), name='static')
-

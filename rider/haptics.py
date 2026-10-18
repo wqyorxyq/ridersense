@@ -280,4 +280,3 @@ class Haptics:
         self.running = False
         self.stop()
         self.close_ports()
-
