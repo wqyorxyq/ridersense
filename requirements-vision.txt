@@ -1,0 +1,12 @@
+# Install official PyTorch CPU/CUDA wheels first; see docs/models.md.
+-r requirements.txt
+torch==2.11.0
+torchvision==0.26.0
+ultralytics==8.4.61
+lap==0.5.12
+einops==0.8.2
+omegaconf==2.3.0
+addict==2.4.0
+imageio==2.37.0
+huggingface-hub==0.36.2
+safetensors==0.7.0

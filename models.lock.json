@@ -1,0 +1,18 @@
+{
+  "yolo11n": {
+    "url": "https://github.com/ultralytics/assets/releases/download/v8.4.0/yolo11n.pt",
+    "size": 5613764,
+    "sha256": "0ebbc80d4a7680d14987a577cd21342b65ecfd94632bd9a8da63ae6417644ee1",
+    "revision": "assets/v8.4.0; asset 340060970",
+    "license": "AGPL-3.0",
+    "filename": "yolo11n.pt"
+  },
+  "da3metric-large": {
+    "url": "https://huggingface.co/depth-anything/DA3METRIC-LARGE/resolve/4010e39f3634a45bc60553321fb49fb760bd594e/model.safetensors",
+    "size": 1336734448,
+    "sha256": "bbea5b0b3ee389849cffa7ddae89de064a90abd2b055fc5aa99aac68db324776",
+    "revision": "4010e39f3634a45bc60553321fb49fb760bd594e",
+    "license": "Apache-2.0",
+    "filename": "da3metric-large.safetensors"
+  }
+}

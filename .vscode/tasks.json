@@ -1,0 +1,13 @@
+{
+  "version": "2.0.0",
+  "tasks": [{
+    "label": "RiderSense: Run website",
+    "type": "process",
+    "command": "${workspaceFolder}/.venv/Scripts/python.exe",
+    "args": ["${workspaceFolder}/scripts/run_site.py"],
+    "options": {"cwd": "${workspaceFolder}"},
+    "problemMatcher": [],
+    "group": {"kind": "build", "isDefault": true},
+    "presentation": {"reveal": "always", "panel": "dedicated"}
+  }]
+}

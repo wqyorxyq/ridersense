@@ -1,0 +1,22 @@
+name: Hardware-free checks
+on: [push, pull_request]
+permissions:
+  contents: read
+jobs:
+  simulation:
+    runs-on: ubuntu-latest
+    env:
+      RIDER_HARDWARE: 'off'
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: python -m pip install -r requirements-dev.txt
+      - run: python -m pytest -q
+      - run: node --check static/app.js
+      - run: node tests/ui_smoke.cjs
+      - run: python scripts/audit_release.py
